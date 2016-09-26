@@ -12,6 +12,13 @@
 * { 
     box-sizing: border-box;
 	width: 100%;
+    text-align: center;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 3px;
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial;
 }
 
 header span.img {
@@ -22,6 +29,45 @@ ul {
     list-style-type: none;
 }
 
+
+.img {
+    background-color: #5cd6d6;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+nav, ul, li, footer{
+    background-color: #d9d9d9;
+    
+}
+
+li{
+    padding: 10px;
+}
+
+li a {
+    background-color: #d9d9d9;
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+article {
+    background-color: #006699;
+    margin-bottom: 10px;
+}
+
+article p {
+    background-color: #006699;
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+}
+
+footer p {
+    background-color: #d9d9d9;
+}
 
 /**
  * This is our first breakpoint!
@@ -53,7 +99,59 @@ ul {
     }
 
     /* Re-style here... */
-    
+
+    .img {
+        background-color: #5cd6d6;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    nav, ul, li, footer{
+        background-color: #d9d9d9;
+        
+    }
+
+    nav{
+        margin-bottom: 10px;
+    }
+
+    li{
+        padding: 10px;
+    }
+
+    li a {
+        background-color: #d9d9d9;
+        text-decoration: underline;
+        vertical-align: middle;
+    }
+
+    article {
+        background-color: #006699;
+        width: 49%;
+
+    }
+
+    #col-1{
+        margin-right: 2px;
+    }
+
+    #col-2{
+        margin-left: 2px;
+        float: right;
+    }
+
+    article p {
+        background-color: #006699;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    footer p {
+        background-color: #d9d9d9;
+    }
+
 }
 
 
@@ -68,5 +166,74 @@ ul {
 @media screen and (min-width: 1280px) {
     /* Re-style here, if necessary! You may want to use the same technique
 	 * used in section::after for the header*/
+    section::after, .img::after {
+        clear: both;
+        content: '';
+        display: table;
+        height: 0;
+        visibility: hidden;
+    }
 
+    .img, section article {
+        float: left;
+    }
+
+    .img {
+        background-color: #5cd6d6;
+        padding: 20px;
+        width: 20%;
+        margin-right: 5px;
+    }
+
+    #menu{
+        width: 79%;
+        margin-bottom: 10px;
+        float: right;
+    }
+
+    nav, ul, li, footer{
+        background-color: #d9d9d9;
+        
+    }
+
+    ul li{
+        float: right;
+        display: inline;
+        padding: 15px;
+        width: 33%;
+    }
+
+    ul li a {
+        background-color: #d9d9d9;
+        text-decoration: underline;
+        vertical-align: middle;
+    }
+
+    article {
+        background-color: #006699;
+        width: 49.5%;
+        padding: 200px;
+
+    }
+
+    #col-1{
+        margin-right: 2px;
+    }
+
+    #col-2{
+        margin-left: 2px;
+        float: right;
+    }
+
+    article p {
+        background-color: #006699;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    footer p {
+        background-color: #d9d9d9;
+    }
 }
